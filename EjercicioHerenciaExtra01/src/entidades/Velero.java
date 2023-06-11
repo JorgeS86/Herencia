@@ -42,4 +42,9 @@ public class Velero extends Barco {
         nroMastiles = leer.nextInt();
     }
 
+    @Override
+    public int calcularModulo() {
+        return super.calcularModulo()+getNroMastiles(); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
+    }
+
 }

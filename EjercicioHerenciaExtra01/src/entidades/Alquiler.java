@@ -83,6 +83,9 @@ public class Alquiler {
     public String toString() {
         return "Alquiler{" + "nombre=" + nombre + ", documento=" + documento + ", fechaAlquiler=" + fechaAlquiler + ", fechaDevolucion=" + fechaDevolucion + ", posicionAmarre=" + posicionAmarre + ", barco=" + barco + '}';
     }
-    
-    
+
+    public Double calcularDias() {
+        double dias = (fechaDevolucion.getTime()-fechaAlquiler.getTime())/(24*60*60*1000);
+        return dias;
+    }
 }

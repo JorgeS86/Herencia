@@ -40,4 +40,10 @@ public class BarcosAMotor extends Barco{
         System.out.println("Ingrese la potencia");
         potenciaCV = leer.nextInt();
     }
+
+    @Override
+    public int calcularModulo() {
+        return super.calcularModulo()+getPotenciaCV(); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
+    }
+     
 }

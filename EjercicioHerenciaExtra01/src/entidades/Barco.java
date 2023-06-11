@@ -62,4 +62,10 @@ abstract class Barco {
         System.out.println("Ingrese año de Fabricacion");
         anioFabricacion = leer.nextInt();
     }
+    
+    public int calcularModulo(){
+        return this.eslora*10;
+    }
+    
+    
 }

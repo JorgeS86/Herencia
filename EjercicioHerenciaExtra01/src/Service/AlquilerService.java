@@ -77,11 +77,32 @@ public class AlquilerService {
         }
         return alquilerAux;
     }
-    
-  /* public Double calculoAlquiler(Alquiler ){
-       int diasAlquiler = barco.getFechaDevolucion().getDay()-barco.getFechaAlquiler().getDay();
-       int modulo = barco.getBarco();
-       Double precioAlquiler = diasAlquiler * (barco.)
-       return precioAlquiler;
-   }*/
+
+    public Double calculoAlquiler(Alquiler alquiler) {
+        Double precioAlquiler = 0d;
+        if (alquiler.getBarco() instanceof Velero) {
+            Velero vel = (Velero) alquiler.getBarco();
+            System.out.println("Dias: " + alquiler.calcularDias());
+            System.out.println("Modulo: " + (double) vel.calcularModulo());
+            System.out.println("Mástiles: " + vel.getNroMastiles());
+            precioAlquiler = alquiler.calcularDias() * (double) vel.calcularModulo();
+
+        } else if (alquiler.getBarco() instanceof YatesdeLujo) {
+            YatesdeLujo ydl = (YatesdeLujo) alquiler.getBarco();
+            System.out.println("Dias: " + alquiler.calcularDias());
+            System.out.println("Modulo: " + (double) ydl.calcularModulo());
+            System.out.println("Potencia en CV: " + ydl.getPotenciaCV());
+            System.out.println("Nro de camarotes: " + ydl.getNrodeCamarotes());
+            precioAlquiler = alquiler.calcularDias() * (double) ydl.calcularModulo();
+
+        } else if (alquiler.getBarco() instanceof BarcosAMotor) {
+            BarcosAMotor bam = (BarcosAMotor) alquiler.getBarco();
+            System.out.println("Dias: " + alquiler.calcularDias());
+            System.out.println("Modulo: " + (double) bam.calcularModulo());
+            System.out.println("Potencia en CV: " + bam.getPotenciaCV());
+            precioAlquiler = alquiler.calcularDias() * (double) bam.calcularModulo();
+
+        }
+        return precioAlquiler;
+    }
 }

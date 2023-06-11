@@ -42,4 +42,9 @@ public class YatesdeLujo extends BarcosAMotor {
         nrodeCamarotes = leer.nextInt();
     }
 
+    @Override
+    public int calcularModulo() {
+        return super.calcularModulo()+getNrodeCamarotes(); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
+    }
+
 }
