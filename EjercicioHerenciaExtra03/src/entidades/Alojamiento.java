@@ -63,7 +63,4 @@ public class Alojamiento {
         return "Alojamiento{" + "nombre=" + nombre + ", direccion=" + direccion + ", localidad=" + localidad + ", gerente=" + gerente + '}';
     }
     
-    public static Comparator<Alojamiento> compararPrecio = new Comparator<Alojamiento>()[
-            ]
-    
 }

@@ -19,14 +19,14 @@ public class HotelCuatroEstrellasServicio {
         HotelCuatroE H4EA = new HotelCuatroE();
         System.out.println("Hotel 4 Estrellas");
         
-        /*System.out.println("Nombre:");
+        System.out.println("Nombre:");
         H4EA.setNombre(leer.next());
         System.out.println("Direccion:");
         H4EA.setDireccion(leer.next());
         System.out.println("Localidad:");
         H4EA.setLocalidad(leer.next());
         System.out.println("Nombre del Gerente:");
-        H4EA.setGerente(leer.next());*/
+        H4EA.setGerente(leer.next());
         
 
         System.out.println("Cantidad de Habitaciones:");

@@ -4,6 +4,8 @@
  */
 package entidades;
 
+import java.util.Comparator;
+
 /**
  *
  * @author jorge
@@ -69,5 +71,6 @@ public class Hotel extends Alojamiento{
         //System.out.println("Valor Final Hotel Comun "+precioHabitaciones);
         
     }
+    
     
 }
